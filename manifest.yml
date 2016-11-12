@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: libergod
+  host: libergod
+  disk_quota: 1024M
+  services:
+  - Conversation-jk
+  - Speech to Text-70
+  - Text to Speech-sy
